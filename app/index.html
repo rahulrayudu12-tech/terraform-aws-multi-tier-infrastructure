@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform AWS Demo</title>
+    <style>
+      body {
+        max-width: 760px;
+        margin: 10vh auto;
+        padding: 0 1.25rem;
+        color: #172033;
+        font: 1rem/1.6 system-ui, sans-serif;
+      }
+      main {
+        padding: 2rem;
+        border: 1px solid #d5deeb;
+        border-radius: 0.75rem;
+      }
+      h1 { color: #176b87; }
+      code { background: #edf3f7; padding: 0.15rem 0.35rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Terraform AWS infrastructure demo</h1>
+      <p>This page is served by an EC2 instance in a private application subnet.</p>
+      <p>Requests reach the instance through an Application Load Balancer. The
+        instance is managed by an Auto Scaling Group and sends host logs to
+        Amazon CloudWatch.</p>
+      <p>Infrastructure is defined as code with Terraform in
+        <code>ap-south-1</code>.</p>
+    </main>
+  </body>
+</html>

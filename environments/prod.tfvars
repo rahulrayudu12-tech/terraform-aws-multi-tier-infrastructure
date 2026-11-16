@@ -1,0 +1,15 @@
+aws_region               = "ap-south-1"
+aws_profile              = "dev"
+project_name             = "awsintern"
+environment              = "prod"
+availability_zone_count  = 2
+enable_nat_gateway       = true
+instance_type            = "t3.micro"
+asg_min_size             = 1
+asg_desired_capacity     = 1
+asg_max_size             = 2
+db_instance_class        = "db.t3.micro"
+db_allocated_storage     = 20
+db_backup_retention_days = 1
+log_retention_days       = 7
+enable_https             = false
